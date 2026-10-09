@@ -3,10 +3,12 @@ kind: Service
 metadata:
   name: app-python-service
 spec:
+  type: NodePort
   selector:
-    app.kubernetes.io/name: proxy
+    app: app-python
   ports:
-  - name: app-service-port
-    protocol: TCP
-    port: 5050
-    targetPort: http-service
+    - name: app-service-port
+      protocol: TCP
+      port: 5050
+      targetPort: http-service
+      nodePort: 30050
