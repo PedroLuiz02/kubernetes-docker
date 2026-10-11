@@ -1,0 +1,180 @@
+<mxfile host="65bd71144e">
+    <diagram id="JqCqomzp8S6IBHXYmGkx" name="Página-1">
+        <mxGraphModel dx="1819" dy="1188" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-42" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=22;fontStyle=1;" value="Arquitetura do Kubernetes" vertex="1">
+                    <mxGeometry height="30" width="360" x="840" y="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-43" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=12;" value="Desenvolvedor / DevOps" vertex="1">
+                    <mxGeometry height="60" width="30" x="885" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-44" parent="1" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" value="Manifestos YAML&lt;br&gt;pod.yml / service.yml" vertex="1">
+                    <mxGeometry height="60" width="140" x="840" y="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-45" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;fontStyle=1;" value="kubectl (CLI)" vertex="1">
+                    <mxGeometry height="50" width="140" x="840" y="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-46" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=none;strokeColor=#666666;strokeWidth=2;verticalAlign=top;align=right;spacingRight=10;fontSize=14;fontStyle=1;arcSize=2;" value="Cluster Kubernetes (minikube)" vertex="1">
+                    <mxGeometry height="790" width="880" x="1040" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-47" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;verticalAlign=top;align=left;spacingLeft=10;fontSize=14;fontStyle=1;arcSize=4;" value="Control Plane (Master)" vertex="1">
+                    <mxGeometry height="260" width="520" x="1060" y="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-48" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1;" value="kube-apiserver&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;ponto de entrada (API REST)&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="70" width="160" x="1090" y="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-49" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;" value="etcd&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;banco chave-valor (estado)&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="60" width="160" x="1400" y="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-50" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" value="kube-scheduler&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;escolhe o Node do Pod&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="50" width="160" x="1400" y="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" value="controller-manager&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;mantém o estado desejado&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="50" width="160" x="1400" y="255" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-52" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalAlign=top;align=left;spacingLeft=10;fontSize=14;fontStyle=1;arcSize=4;" value="Worker Node 1" vertex="1">
+                    <mxGeometry height="290" width="400" x="1060" y="410" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-53" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" value="kubelet" vertex="1">
+                    <mxGeometry height="45" width="110" x="1080" y="450" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-54" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" value="kube-proxy" vertex="1">
+                    <mxGeometry height="45" width="110" x="1205" y="450" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-55" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;" value="Container Runtime&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;(Docker / containerd)&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="45" width="120" x="1330" y="450" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-56" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalAlign=top;fontSize=12;fontStyle=1;arcSize=6;" value="Pod: app-python (pod.yml)&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;label app=app-python | IP interno do Pod&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="130" width="360" x="1080" y="540" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-57" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=11;" value="Container&lt;br&gt;pedroluiz02/meu_app_python:1.0&lt;br&gt;porta 5050" vertex="1">
+                    <mxGeometry height="60" width="220" x="1150" y="590" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-58" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalAlign=top;align=left;spacingLeft=10;fontSize=14;fontStyle=1;arcSize=4;" value="Worker Node 2" vertex="1">
+                    <mxGeometry height="290" width="400" x="1500" y="410" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-59" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" value="kubelet" vertex="1">
+                    <mxGeometry height="45" width="110" x="1520" y="450" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-60" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" value="kube-proxy" vertex="1">
+                    <mxGeometry height="45" width="110" x="1645" y="450" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-61" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;" value="Container Runtime&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;(Docker / containerd)&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="45" width="120" x="1770" y="450" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-62" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalAlign=top;fontSize=12;fontStyle=1;arcSize=6;" value="Pod: app-python (réplica)&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;criado pelo ReplicaSet | mesma label&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="130" width="360" x="1520" y="540" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-63" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=11;" value="Container&lt;br&gt;pedroluiz02/meu_app_python:1.0&lt;br&gt;porta 5050" vertex="1">
+                    <mxGeometry height="60" width="220" x="1590" y="590" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-64" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" value="Deployment&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;define réplicas e atualizações&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="55" width="160" x="1620" y="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-65" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" value="ReplicaSet&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;garante N Pods rodando&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="55" width="160" x="1620" y="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-66" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=13;fontStyle=1;" value="Service: app-python-service (service.yml)&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;tipo NodePort | porta 5050 | nodePort 30050 | selector app=app-python&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="60" width="460" x="1210" y="745" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-67" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=13;fontStyle=1;" value="Navegador do usuário&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;http://&amp;lt;minikube ip&amp;gt;:30050&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="55" width="240" x="1320" y="880" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-68" edge="1" parent="1" source="kYWpHSlD3osIRzxL1i2U-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;" target="kYWpHSlD3osIRzxL1i2U-44" value="escreve">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-69" edge="1" parent="1" source="kYWpHSlD3osIRzxL1i2U-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;" target="kYWpHSlD3osIRzxL1i2U-45" value="kubectl apply -f">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-70" edge="1" parent="1" source="kYWpHSlD3osIRzxL1i2U-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="kYWpHSlD3osIRzxL1i2U-48" value="HTTPS (REST)">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1072" y="345"/>
+                            <mxPoint x="1072" y="195"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-71" edge="1" parent="1" source="kYWpHSlD3osIRzxL1i2U-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;startArrow=classic;" target="kYWpHSlD3osIRzxL1i2U-49" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1325" y="195"/>
+                            <mxPoint x="1325" y="130"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-72" edge="1" parent="1" source="kYWpHSlD3osIRzxL1i2U-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;startArrow=classic;" target="kYWpHSlD3osIRzxL1i2U-50" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-73" edge="1" parent="1" source="kYWpHSlD3osIRzxL1i2U-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;startArrow=classic;" target="kYWpHSlD3osIRzxL1i2U-51" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1325" y="195"/>
+                            <mxPoint x="1325" y="280"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-74" edge="1" parent="1" source="kYWpHSlD3osIRzxL1i2U-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;dashed=1;fontSize=11;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.4545;entryY=0;entryDx=0;entryDy=0;" target="kYWpHSlD3osIRzxL1i2U-53" value="comanda o kubelet">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-75" edge="1" parent="1" source="kYWpHSlD3osIRzxL1i2U-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;dashed=1;fontSize=11;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="kYWpHSlD3osIRzxL1i2U-59" value="comanda o kubelet">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1210" y="380"/>
+                            <mxPoint x="1575" y="380"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-76" edge="1" parent="1" source="kYWpHSlD3osIRzxL1i2U-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;" target="kYWpHSlD3osIRzxL1i2U-55" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1135" y="510"/>
+                            <mxPoint x="1390" y="510"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-77" edge="1" parent="1" source="kYWpHSlD3osIRzxL1i2U-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;" target="kYWpHSlD3osIRzxL1i2U-61" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1575" y="510"/>
+                            <mxPoint x="1830" y="510"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-78" edge="1" parent="1" source="kYWpHSlD3osIRzxL1i2U-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;" target="kYWpHSlD3osIRzxL1i2U-65" value="cria">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-79" edge="1" parent="1" source="kYWpHSlD3osIRzxL1i2U-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;dashed=1;fontSize=11;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="kYWpHSlD3osIRzxL1i2U-62" value="gerencia as réplicas (Pods)">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1910" y="227.5"/>
+                            <mxPoint x="1910" y="605"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-80" edge="1" parent="1" source="kYWpHSlD3osIRzxL1i2U-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;strokeWidth=2;" target="kYWpHSlD3osIRzxL1i2U-56" value="balanceia (label app=app-python)">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1260" y="720"/>
+                            <mxPoint x="1260" y="720"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-81" edge="1" parent="1" source="kYWpHSlD3osIRzxL1i2U-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeWidth=2;" target="kYWpHSlD3osIRzxL1i2U-62" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1620" y="720"/>
+                            <mxPoint x="1620" y="720"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="kYWpHSlD3osIRzxL1i2U-82" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;fontSize=11;strokeWidth=2;" target="kYWpHSlD3osIRzxL1i2U-66" value="acesso externo (NodePort 30050)">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1440" y="880" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

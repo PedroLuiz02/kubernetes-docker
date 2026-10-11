@@ -1,0 +1,52 @@
+Name:             app-python
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             minikube/192.168.49.2
+Start Time:       Sun, 11 Oct 2026 20:41:15 -0300
+Labels:           app=app-python
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.3
+IPs:
+  IP:  10.244.0.3
+Containers:
+  app-python:
+    Container ID:   containerd://af8ec55a0420321be7ae761e91992fc079327b25c4b0d4baf4591365bfecb232
+    Image:          pedroluiz02/meu_app_python:1.0
+    Image ID:       docker.io/pedroluiz02/meu_app_python@sha256:5c60f3804ba256e754faa9f6fa02bd5601d9553bd42bf08c222c631d9b778dd8
+    Port:           5050/TCP (http-service)
+    Host Port:      0/TCP (http-service)
+    State:          Running
+      Started:      Sun, 11 Oct 2026 20:41:28 -0300
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-jg8qv (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-jg8qv:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age    From               Message
+  ----    ------     ----   ----               -------
+  Normal  Scheduled  5m57s  default-scheduler  Successfully assigned default/app-python to minikube
+  Normal  Pulling    5m56s  kubelet            spec.containers{app-python}: Pulling image "pedroluiz02/meu_app_python:1.0"
+  Normal  Pulled     5m44s  kubelet            spec.containers{app-python}: Successfully pulled image "pedroluiz02/meu_app_python:1.0" in 12.558s (12.558s including waiting). Image size: 48262290 bytes.
+  Normal  Created    5m44s  kubelet            spec.containers{app-python}: Container created
+  Normal  Started    5m44s  kubelet            spec.containers{app-python}: Container started
